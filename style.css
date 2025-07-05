@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    background-color: rgb(12, 17, 20);
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+.first h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.first img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.code-editor-container {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(4, 32, 49);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.code-editor {
+    margin-top: -55px;
+    width: 450px;
+    height: 450px;
+    background-color: rgb(12, 17, 20);
+    box-shadow: 2px 4px 10px black;
+    border: 2px solid rgba(255, 255, 255, 0.105);
+    border-radius: 20px;
+    overflow: auto;
+    position: relative;
+
+}
+
+.head-editor {
+    height: 60px;
+    background-color: rgb(12, 17, 20);
+    box-shadow: 2px 4px 10px black;
+    border-radius: 0px 0px 40px 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left-head span {
+    color: rgba(255, 255, 255, 0.491);
+    font-size: 20px;
+}
+
+.left-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right-head img {
+    transform: all 0.5s;
+    cursor: pointer;
+}
+
+.right-head img:hover {
+    scale: 120%;
+}
+
+.code-editor textarea {
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: rgb(12, 17, 20);
+    border: none;
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    padding: 20px;
+    resize: none;
+    font-size: 20px;
+    color: white;
+}
+
+.output-container {
+    width: 100%;
+    height: 30%;
+    box-shadow: 2px -4px 10px rgb(0, 71, 72);
+    color: rgba(255, 255, 255, 0.491);
+    font-size: 20px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    transition: all 0.5s;
+
+}
+
+.output-head {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(12, 17, 20);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.output-head img {
+    transform: all 0.5s;
+    cursor: pointer;
+}
+
+.output-head img:hover {
+    scale: 120%;
+}
+
+#output {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: auto;
+    background-color: white;
+}
+
+.output-full-active {
+    height: 100%;
+}
+
+#full {
+    transition: all 0.5s;
+}
+
+.html-input::selection {
+    background-color: rgb(246, 142, 15);
+}
+
+.css-inputt::selection {
+    background-color: rgb(15, 118, 173);
+}
+
+.js-input::selection {
+    background-color: rgb(232, 207, 43);
+}
+
+@media (max-width:400px) {
+    .code-editor {
+        margin-top: -7px;
+    }
+}
