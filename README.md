@@ -1,4 +1,4 @@
-h1>Code Editor
+<h1>Code Editor</h1>
 
 A browser-based code editor that allows you to write and test code in real-time. Built with HTML5, CSS3, and JavaScript (ES6), it supports syntax highlighting for multiple programming languages, making it ideal for learning, prototyping, and experimenting with code directly in the browser.
 
