@@ -26,7 +26,7 @@ JavaScript (ES6) – Real-time updates, syntax highlighting, and editor function
 
 Clone the repository
 
-git clone https://github.com/your-username/code-editor.git
+git clone https://github.com/Sanchay-Kumar-Singh/Code_Editor-Bulid-Using-JavaScript.git
 
 
 Navigate to the project folder
